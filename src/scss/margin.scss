@@ -1,0 +1,41 @@
+@import "./theme.scss";
+@import "../function/unit.scss";
+
+$step: 12;
+@for $i from 0 through $step {
+  .m-#{$i} {
+    margin: #{unit($i * $baseValue/4)};
+  }
+}
+@for $i from 0 through $step { 
+  .mx-#{$i} {
+    margin-left: #{unit($i * $baseValue/4)};
+    margin-right: #{unit($i * $baseValue/4)};
+  }
+}
+@for $i from 0 through $step {
+  .my-#{$i} {
+    margin-top: #{unit($i * $baseValue/4)};
+    margin-bottom: #{unit($i * $baseValue/4)};
+  }
+}
+@for $i from 0 through $step {
+  .ml-#{$i} {
+    margin-left: #{unit($i * $baseValue/4)};
+  }
+}
+@for $i from 0 through $step {
+  .mr-#{$i} {
+    margin-right: #{unit($i * $baseValue/4)};
+  }
+}
+@for $i from 0 through $step {
+  .mt-#{$i} {
+    margin-top: #{unit($i * $baseValue/4)};
+  }
+}
+@for $i from 0 through $step {
+  .mb-#{$i} {
+    margin-bottom: #{unit($i * $baseValue/4)};
+  }
+}
