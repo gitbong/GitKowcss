@@ -1,5 +1,5 @@
-@import "../scss/theme.scss";
+@import "../theme/default.theme.scss";
 
 @function unit($value) {
-  @return $value * ($convertedValue/$baseValue) + $unit;
+  @return $value * ($convertedFontSize/$baseFontSize) + $unit;
 }

@@ -1,4 +1,4 @@
-@import "./theme.scss";
+@import "../theme/default.theme.scss";
 @import "../function/unit.scss";
 
 $fontSize: (
@@ -49,6 +49,6 @@ $fontSize: (
   $item: nth($fontSize, $i);
   @debug(map-get($item,size));
   .text-#{map-get($item,size)} {
-    font-size: unit($baseValue * map-get($item,value));
+    font-size: unit($baseFontSize * map-get($item,value));
   }
 }

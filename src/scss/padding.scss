@@ -1,41 +1,41 @@
-@import "./theme.scss";
+@import "../theme/default.theme.scss";
 @import "../function/unit.scss";
 
 $step: 12;
 @for $i from 0 through $step {
   .p-#{$i} {
-    padding: #{unit($i * $baseValue/4)};
+    padding: #{unit($i * $baseFontSize/4)};
   }
 } 
 @for $i from 0 through $step {
   .px-#{$i} {
-    padding-left: #{unit($i * $baseValue/4)};
-    padding-right: #{unit($i * $baseValue/4)};
+    padding-left: #{unit($i * $baseFontSize/4)};
+    padding-right: #{unit($i * $baseFontSize/4)};
   }
 }
 @for $i from 0 through $step {
   .py-#{$i} {
-    padding-top: #{unit($i * $baseValue/4)};
-    padding-bottom: #{unit($i * $baseValue/4)};
+    padding-top: #{unit($i * $baseFontSize/4)};
+    padding-bottom: #{unit($i * $baseFontSize/4)};
   }
 }
 @for $i from 0 through $step {
   .pl-#{$i} {
-    padding-left: #{unit($i * $baseValue/4)};
+    padding-left: #{unit($i * $baseFontSize/4)};
   }
 }
 @for $i from 0 through $step {
   .pr-#{$i} {
-    padding-right: #{unit($i * $baseValue/4)};
+    padding-right: #{unit($i * $baseFontSize/4)};
   }
 }
 @for $i from 0 through $step {
   .pt-#{$i} {
-    padding-top: #{unit($i * $baseValue/4)};
+    padding-top: #{unit($i * $baseFontSize/4)};
   }
 }
 @for $i from 0 through $step {
   .pb-#{$i} {
-    padding-bottom: #{unit($i * $baseValue/4)};
+    padding-bottom: #{unit($i * $baseFontSize/4)};
   }
 }
