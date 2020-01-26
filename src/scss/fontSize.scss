@@ -1,0 +1,54 @@
+@import "./theme.scss";
+@import "../function/unit.scss";
+
+$fontSize: (
+  (
+    size: "xs",
+    value: 0.75
+  ),
+  (
+    size: "sm",
+    value: 0.875
+  ),
+  (
+    size: "base",
+    value: 1
+  ),
+  (
+    size: "lg",
+    value: 1.125
+  ),
+  (
+    size: "xl",
+    value: 1.25
+  ),
+  (
+    size: "2xl",
+    value: 1.5
+  ),
+  (
+    size: "3xl",
+    value: 1.875
+  ),
+  (
+    size: "4xl",
+    value: 2.25
+  ),
+  (
+    size: "5xl",
+    value: 3
+  ),
+  (
+    size: "6xl",
+    value: 4
+  )
+);
+
+
+@for $i from 1 through length($fontSize) {
+  $item: nth($fontSize, $i);
+  @debug(map-get($item,size));
+  .text-#{map-get($item,size)} {
+    font-size: unit($baseValue * map-get($item,value));
+  }
+}

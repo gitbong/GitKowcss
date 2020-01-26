@@ -10,7 +10,7 @@
     "node-sass": "^4.13.1"
   },
   "scripts": {
-    "watch": "node-sass -w src/Genkowcss.scss -o dev/",
+    "watch": "node-sass -w src/*.scss -o dev/",
     "build": "node-sass src/Genkowcss.scss -o dist/ --output-style compressed" 
   }
 }
