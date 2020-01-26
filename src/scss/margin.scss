@@ -7,7 +7,7 @@ $step: 12;
     margin: #{unit($i * $baseValue/4)};
   }
 }
-@for $i from 0 through $step { 
+@for $i from 0 through $step {
   .mx-#{$i} {
     margin-left: #{unit($i * $baseValue/4)};
     margin-right: #{unit($i * $baseValue/4)};

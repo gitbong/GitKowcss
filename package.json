@@ -1,0 +1,16 @@
+{
+  "name": "Genkowcss",
+  "version": "1.0.0",
+  "description": "CSS class library",
+  "main": "",
+  "repository": "https://github.com/gitbong/GenKowcss.git",
+  "author": "gitbong",
+  "license": "MIT",
+  "dependencies": {
+    "node-sass": "^4.13.1"
+  },
+  "scripts": {
+    "watch": "node-sass -w src/Genkowcss.scss -o dev/",
+    "build": "node-sass src/Genkowcss.scss -o dist/ --output-style compressed" 
+  }
+}
