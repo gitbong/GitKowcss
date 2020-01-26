@@ -1,0 +1,95 @@
+@import "../theme/default.theme.scss";
+@import "../function/unit.scss";
+
+$radius-sm: 0.125;
+$radius-default: 0.25;
+$radius-lg: 0.5;
+$radius-full: 9999;
+
+.rounded-none {
+  border-radius: 0;
+}
+.rounded-sm {
+  border-radius: #{unit($radius-sm * $baseFontSize)};
+}
+.rounded {
+  border-radius: #{unit($radius-default * $baseFontSize)};
+}
+.rounded-lg {
+  border-radius: #{unit($radius-lg * $baseFontSize)};
+}
+.rounded-full {
+  border-radius: #{unit($radius-full * $baseFontSize)};
+}
+
+// left
+.rounded-l-sm {
+  border-top-left-radius: #{unit($radius-sm * $baseFontSize)};
+  border-bottom-left-radius: #{unit($radius-sm * $baseFontSize)};
+}
+.rounded-l {
+  border-top-left-radius: #{unit($radius-default * $baseFontSize)};
+  border-bottom-left-radius: #{unit($radius-default * $baseFontSize)};
+}
+.rounded-l-lg {
+  border-top-left-radius: #{unit($radius-lg * $baseFontSize)};
+  border-bottom-left-radius: #{unit($radius-lg * $baseFontSize)};
+}
+.rounded-l-full {
+  border-top-left-radius: #{unit($radius-full * $baseFontSize)};
+  border-bottom-left-radius: #{unit($radius-full * $baseFontSize)};
+}
+
+// top
+.rounded-t-sm {
+  border-top-left-radius: #{unit($radius-sm * $baseFontSize)};
+  border-top-right-radius: #{unit($radius-sm * $baseFontSize)};
+}
+.rounded-t {
+  border-top-left-radius: #{unit($radius-default * $baseFontSize)};
+  border-top-right-radius: #{unit($radius-default * $baseFontSize)};
+}
+.rounded-t-lg {
+  border-top-left-radius: #{unit($radius-lg * $baseFontSize)};
+  border-top-right-radius: #{unit($radius-lg * $baseFontSize)};
+}
+.rounded-t-full {
+  border-top-left-radius: #{unit($radius-full * $baseFontSize)};
+  border-top-right-radius: #{unit($radius-full * $baseFontSize)};
+}
+
+// right
+.rounded-r-sm {
+  border-top-right-radius: #{unit($radius-sm * $baseFontSize)};
+  border-bottom-right-radius: #{unit($radius-sm * $baseFontSize)};
+}
+.rounded-r {
+  border-top-right-radius: #{unit($radius-default * $baseFontSize)};
+  border-bottom-right-radius: #{unit($radius-default * $baseFontSize)};
+}
+.rounded-r-lg {
+  border-top-right-radius: #{unit($radius-lg * $baseFontSize)};
+  border-bottom-right-radius: #{unit($radius-lg * $baseFontSize)};
+}
+.rounded-r-full {
+  border-top-right-radius: #{unit($radius-full * $baseFontSize)};
+  border-bottom-right-radius: #{unit($radius-full * $baseFontSize)};
+}
+
+// bottom
+.rounded-b-sm {
+  border-bottom-left-radius: #{unit($radius-sm * $baseFontSize)};
+  border-bottom-right-radius: #{unit($radius-sm * $baseFontSize)};
+}
+.rounded-b {
+  border-bottom-left-radius: #{unit($radius-default * $baseFontSize)};
+  border-bottom-right-radius: #{unit($radius-default * $baseFontSize)};
+}
+.rounded-b-lg {
+  border-bottom-left-radius: #{unit($radius-lg * $baseFontSize)};
+  border-bottom-right-radius: #{unit($radius-lg * $baseFontSize)};
+}
+.rounded-b-full {
+  border-bottom-left-radius: #{unit($radius-full * $baseFontSize)};
+  border-bottom-right-radius: #{unit($radius-full * $baseFontSize)};
+}

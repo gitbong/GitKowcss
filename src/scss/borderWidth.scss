@@ -1,0 +1,52 @@
+@import "../function/unit.scss";
+$types: (
+  (
+    type: "",
+    value: ""
+  ),
+  (
+    type: "-t",
+    value: "-top"
+  ),
+  (
+    type: "-r",
+    value: "-right"
+  ),
+  (
+    type: "-b",
+    value: "-bottom"
+  ),
+  (
+    type: "-l",
+    value: "-left"
+  )
+);
+
+$sizes: (
+  (
+    key: "-0",
+    value: 0
+  ),
+  (
+    key: "",
+    value: 1
+  ),
+  (
+    key: "-4",
+    value: 4
+  ),
+  (
+    key: "-8",
+    value: 8
+  )
+);
+
+@for $i from 1 through length($sizes) {
+  $size: nth($sizes, $i);
+  @for $j from 1 through length($types) {
+    $type: nth($types, $j);
+    .border#{map-get($type,type)}#{map-get($size,key)} {
+      border#{map-get($type,value)}: #{map-get($size, value) * 1px};
+    }
+  }
+}
