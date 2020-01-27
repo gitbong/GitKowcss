@@ -5,7 +5,7 @@ $total: 64;
 
 .h-auto {
   height: auto;
-} 
+}
 .h-full {
   height: 100%;
 }
@@ -15,8 +15,11 @@ $total: 64;
 .h-px {
   height: 1px;
 }
-@for $i from 0 through $total {
-  .h-#{$i}{
-    height: #{unit($i * 0.125 * $baseFontSize)};
-  }
+
+@for $i from 1 through length($spacingScale) {
+  $spacing: nth($spacingScale, $i);
+  $id: map-get($spacing, scale);
+  .h-#{$id} {
+    height: #{unit($id * $baseScale * $baseFontSize)};
+  } 
 }

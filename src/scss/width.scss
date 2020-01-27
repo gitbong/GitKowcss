@@ -15,15 +15,18 @@ $total: 24;
 .w-px {
   width: 1px;
 }
+
 @for $i from 1 to $total {
   .w-#{$i}-#{$total} { 
     width: $i/$total * 100%;
   }
 }
 
-@for $i from 0 through 64 {
-  .w-#{$i}{
-    width: #{unit($i * 0.125 * $baseFontSize)};
-  }
+@for $i from 1 through length($spacingScale) {
+  $spacing: nth($spacingScale, $i);
+  $id: map-get($spacing, scale);
+  .w-#{$id} {
+    width: #{unit($id * $baseScale * $baseFontSize)};
+  } 
 }
-
+ 

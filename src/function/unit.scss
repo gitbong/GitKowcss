@@ -1,4 +1,58 @@
 @import "../theme/default.theme.scss";
+$baseScale: 0.25;
+$spacingScale: (
+  (
+    scale: 1
+  ),
+  (
+    scale: 2
+  ),
+  (
+    scale: 3
+  ),
+  (
+    scale: 4
+  ),
+  (
+    scale: 5
+  ),
+  (
+    scale: 6
+  ),
+  (
+    scale: 8
+  ),
+  (
+    scale: 10
+  ),
+  (
+    scale: 12
+  ),
+  (
+    scale: 16
+  ),
+  (
+    scale: 20
+  ),
+  (
+    scale: 24
+  ),
+  (
+    scale: 32
+  ),
+  (
+    scale: 40
+  ),
+  (
+    scale: 48
+  ),
+  (
+    scale: 56
+  ),
+  (
+    scale: 64
+  )
+);
 
 @function unit($value) {
   @return $value * ($convertedFontSize/$baseFontSize) + $unit;
