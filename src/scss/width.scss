@@ -1,0 +1,29 @@
+@import "../theme/default.theme.scss";
+@import "../function/unit.scss";
+
+$total: 24;
+
+.w-auto {
+  width: auto;
+}
+.w-full {
+  width: 100%;
+}
+.w-screen {
+  width: 100vw;
+}
+.w-px {
+  width: 1px;
+}
+@for $i from 1 to $total {
+  .w-#{$i}-#{$total} { 
+    width: $i/$total * 100%;
+  }
+}
+
+@for $i from 0 through 64 {
+  .w-#{$i}{
+    width: #{unit($i * 0.125 * $baseFontSize)};
+  }
+}
+

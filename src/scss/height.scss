@@ -1,0 +1,22 @@
+@import "../theme/default.theme.scss";
+@import "../function/unit.scss";
+
+$total: 64;
+
+.h-auto {
+  height: auto;
+} 
+.h-full {
+  height: 100%;
+}
+.h-screen {
+  height: 100vh;
+}
+.h-px {
+  height: 1px;
+}
+@for $i from 0 through $total {
+  .h-#{$i}{
+    height: #{unit($i * 0.125 * $baseFontSize)};
+  }
+}
