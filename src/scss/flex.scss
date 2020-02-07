@@ -4,17 +4,17 @@
 
 // flex direction
 .flex-row {
-  direction: row;
+  flex-direction: row;
 }
 .flex-row-reverse {
-  direction: row-reverse;
+  flex-direction: row-reverse;
 }
 
 .flex-col {
-  direction: column;
+  flex-direction: column;
 }
 .flex-col-reverse {
-  direction: column-reverse;
+  flex-direction: column-reverse;
 }
 
 // flex wrap
@@ -64,19 +64,19 @@
 
 // flex justify content
 .justify-start {
-  justify-content: start;
+  justify-content: flex-start;
 }
 .justify-center {
   justify-content: center;
 }
 .justify-end {
-  justify-content: end;
+  justify-content: flex-end;
 }
 .justify-around {
-  justify-content: around;
+  justify-content: space-around;
 }
 .justify-between {
-  justify-content: between;
+  justify-content: space-between;
 }
 
 // flex flex
